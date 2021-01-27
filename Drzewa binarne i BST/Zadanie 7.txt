@@ -1,0 +1,23 @@
+Algorytm sprawdzający wysokość drzewa BST z zestawu kluczy:
+
+treeLenght(A, n)
+  maxCounter = 0
+
+  for i = 2 to n
+    maxBorder = max(A, n)		;największa wartość w ciągu
+    minBorder = min(A, n)		;najmniejsza wartość w ciągu
+    counter = 0
+
+    for j = 1 to i - 1
+      if A[j] < A[i]
+        if A[j] > minBorder
+          minBorder = A[j]
+          counter += 1
+      if A[j] >= A[i]
+        if A[j] <= maxBorder
+          maxBorder = A[j]
+          counter += 1
+    
+    if maxCounter < counter
+      maxCounter = counter
+  return maxCount

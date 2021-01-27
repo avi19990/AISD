@@ -1,0 +1,3 @@
+W procedurze SZUKAJ nie mogą być sprawdzone ciągi wierzchołków c i e ponieważ w przypadku:
+-ciągu c zostaje porównana wartość 911, a później wartość 912, co oznacza że 912 jest lewym wnukiem 911, co nie jest możliwe w drzewie BST
+-ciągu e zostaje porównana wartość 347, a później wartość 299, co oznacza że 299 jest prawym wnukiem 347, co nie jest możliwe w drzewie BST
